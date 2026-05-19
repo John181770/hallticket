@@ -1,0 +1,6 @@
+playwright>=1.52.0
+pandas>=2.2.0
+openpyxl>=3.1.0
+pytesseract>=0.3.10
+Pillow>=10.0.0
+beautifulsoup4>=4.12.0
