@@ -1,0 +1,20 @@
+{
+  "name": "ntruhs-result-extractor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "extract": "node extract_mbbs_results.mjs",
+    "run-results": "node extract_mbbs_results.mjs --input hall_tickets.csv --url \"http://results.uhsap.in/main_result?result=kKJFRFKdGMyT%2b6%2fe4faAQQ%3d%3d\" --headful --browser-channel msedge --output exam_results_live.csv --error-output exam_results_errors_live.csv --resume",
+    "render-pdf": "node render_pdf_pages.mjs",
+    "ocr-tickets": "node ocr_hall_tickets.mjs",
+    "rebuild-tickets": "node rebuild_hall_tickets_from_ocr.mjs"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "pdfjs-dist": "^5.7.284",
+    "playwright": "^1.52.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
